@@ -1,0 +1,75 @@
+//===========================================
+	// -Helper Classes start
+//===========================================
+
+.text-center{
+	text-align: center;
+}
+.container{
+	margin: 0 auto;
+    width: 100%;
+	max-width: rem(1200);  
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.top-heading{
+	font-family: $font-header;
+	padding: 0;
+	margin: 0;
+	font-size: rem(33);
+}
+@include mq-only('xs','md'){
+	.top-heading{
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		font-size: rem(50);
+
+	}
+}
+.main-h3{
+	font-family:$font-primery;
+	font-size: rem(20);
+	padding: 0;
+}
+@include mq-only('xs','md'){
+	.main-h3{
+		margin: 0 auto;
+		font-size: rem(30);
+	}
+}
+.padding-top{
+	padding-top: rem(100);
+}
+.margin-left{
+	margin-left: rem(12);
+}
+.margin-lefti{
+	margin-left: rem(218);
+}
+.font-size{
+   font-size: rem(22);
+}
+.para-font{
+	font-size: 18px;
+	font-family:$lato;
+}
+@include mq-only('xs','md'){
+	.para-font{
+		font-size: 14px;
+        color: #d3e9fe;
+	}
+}
+h2{
+	margin: auto;
+	font-size: 33px;
+	font-family: $font-header;
+	padding-top:rem(116);
+	
+}
+//===========================================
+	// -Helper Classes end
+//===========================================

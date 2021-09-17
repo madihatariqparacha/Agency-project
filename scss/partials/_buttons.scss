@@ -1,0 +1,67 @@
+//===========================================
+    // -Buttons start
+//===========================================
+
+.btn {
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  &[disabled], &.disabled{
+    cursor: not-allowed;
+  }
+
+}
+
+@include mq-only('xs', 'lg'){
+	.btn{
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+.bn-btn{
+  background-color:$blue-color;
+  border-radius: rem(100);
+  border: none;
+  width: rem(100);
+  font-family: $lato;
+  height: rem(28);
+  outline: none;
+  &:hover {
+    background-color:rgba(0,0,0,0.7);
+  }
+}
+
+@include mq-only('xs', 'lg'){
+	.bn-btn{
+		display: block;
+		text-align: center;
+	}
+}
+.ms-btn{
+	  background-color:#3b4374;
+    border-radius: rem(100);
+    border: none;
+    width: rem(128);
+    font-family: $lato;
+    height: rem(28);
+    margin-bottom:rem(100);
+    font-size: rem(15);
+    outline: none;
+    &:hover {
+      background-color:rgba(0,0,0,0.7);
+    }
+}
+@include mq-only('xs', 'lg'){
+	.ms-btn{
+		display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+	}
+}
+//===========================================
+    // -Buttons end
+//===========================================

@@ -1,0 +1,220 @@
+//===========================================
+// -Footer strt
+//===========================================
+footer{
+	background-image: url("../images/Layer 4@1X.png");
+	color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+input{
+	border-radius: rem(14);
+	margin-left: rem(55);
+	margin-left: rem(55);
+	height: rem(30);
+	width: rem(331);
+}
+.fs-icon{
+	margin-right: rem(100);
+}
+.icon{
+	color: white;
+	margin-right: rem(30);
+	border: 3px solid white;
+	border-radius: 1000px;
+	padding: 9px;
+	&:hover {
+		background-color:#007af3;
+	  }
+}
+.fs-p{
+	margin-top: rem(117);
+}
+icon:hover{
+	color: wheat;
+}
+.email{
+	margin-top: rem(72);
+	i{
+		width:10%;
+		float: left;
+		padding: rem(0) rem(20);
+		margin: 0;
+		font-size: rem(40);
+	}
+	p{
+		width: 80%;
+		float: left;
+		padding: rem(0) rem(20);
+		margin: 0;
+		font-size: rem(18);
+		line-height: 1.5;
+	}
+}
+.call-us{
+	margin-top: rem(72);
+	i{
+		width:10%;
+		float: left;
+		padding: rem(0) rem(20);
+		margin: rem(0);
+		font-size: rem(40);
+	}
+	p{
+		width: 80%;
+		float: left;
+		padding: rem(0) rem(20);
+		margin: 0;
+		font-size: rem(18);
+		line-height: 1.5;
+	}
+}
+.address{
+	margin-top: rem(72);
+	i{
+		float: left;
+		padding: rem(0) rem(20);
+		margin: rem(0);
+		font-size: rem(40);
+	}
+	p{
+		width: 80%;
+		float: left;
+		margin: 0px;
+		font-size: rem(18);
+	    line-height: 1.5;
+	}
+}
+.f1{
+	float: left;
+    width: 45%;
+    padding: 9px;
+}
+.f2{
+	float: right;
+    padding-top: rem(65);
+    width: 48%;
+}
+@include mq-only('md', 'lg'){
+	.icon{
+		padding: rem(10);
+		display: inline-block;
+		font-size: rem(15);
+		margin:rem(0);
+	}
+	.fs-p {
+		margin-top: rem(24);
+	}
+	.f1{
+		float: none;
+		width: 68%;
+		padding: rem(9);
+		text-align: center;
+		display: block;
+	}
+	.f2{
+		float: none;
+		padding-top: rem(65);
+		width: 60%;
+		display: block;
+	}
+}
+.git-list {
+	display: table;
+	vertical-align: middle;
+	span {
+		display: table-cell;
+		width: 25%;
+	}
+	input {
+		display: table-cell;
+		width: rem(360);
+		height: rem(34);
+		background-color: #2b2b2b;
+		border: none;
+		outline: none;
+		padding: rem(15);
+		
+	}
+	.msg {
+		height: rem(80);
+	}
+}
+@include mq-only('xs', 'md'){
+	.f1{
+		float: none;
+		width: 96%;
+		padding: rem(9);
+		text-align: center;
+		display: block;
+	}
+	.f2{
+		float: none;
+		padding-top: rem(65);
+		width: 56%;
+		margin: 0 auto;
+	}
+	
+	.git-list input {
+		width: rem(244);
+	}
+	.address p {
+		width: 102%;
+	}
+	}
+@include mq-only('xs', 'md'){
+	.git-list input {
+		width: rem(259);
+	}
+	.main-h3{
+		text-align: center;
+	}
+	.email{
+		margin: rem(47) rem(88);
+	}
+	.address{
+		margin: rem(47) rem(88);
+	}
+	.call-us{
+		margin: rem(47) rem(88);
+	}
+	.ab-service {
+		font-size: rem(11);
+	}
+	.p1-para {
+		line-height: 1;
+	}
+	.git-list span {
+		font-size: rem(15);
+	}	
+
+.icon{
+	margin-right: rem(-3);
+}
+
+h4.main-h3.margin-left {
+	margin-bottom: rem(24);
+    margin-top: rem(85);
+	margin-right: rem(30);
+}
+input{
+	margin-left: 0;
+}
+}
+
+.footer-sec1{
+	padding-top: rem(136);
+}
+
+.footer-icons{
+	font-size: rem(24);
+	text-align: center;
+}
+@include mq('sm','max'){
+	.f2{
+		width: 90%;
+	}
+}
+//===========================================
+// -Footer end
+//===========================================

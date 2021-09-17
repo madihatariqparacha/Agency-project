@@ -1,0 +1,144 @@
+
+
+//===========================================
+// -Header start
+//===========================================
+.wrapper{
+	position: relative;
+}
+.banner{
+	position: relative;
+	img{
+		width: 100%;
+		height:auto;
+	}
+}
+.bg-img{
+	width: 100%;
+	height: 939px;
+}
+.boy-img-img {
+	margin-top: rem(217);
+    float: right;
+    max-width: 50%;
+	@include mq('lg', max){
+		margin-top: rem(-434);
+		width: 48%;
+	}
+	@include mq('sm', max){
+		max-width: 48%;
+	}
+}
+.boy{
+	width: 100%;
+}
+@include mq-only('xs', 'sm'){
+	.header-logo {
+		float: left;
+		margin-top: -0.0625rem;
+	    margin-left: rem(20);
+	}
+	.side-nav-cont {
+		height: 46%;
+	}
+	.sdn-links {
+		padding: 10px;
+		text-align: center;
+	}
+	.bn-btn {
+		margin-top: 6px;
+		width: 80px;
+		height: 21px;
+	}
+	.ab-service{
+		font-size: rem(11);
+	}
+}
+@include mq-only('xs', 'md'){
+	.intro{
+		margin-top: rem(20);
+		margin-left: 20px;
+		max-width: 80%;
+		font-size: 12px;
+		line-height: 1.3;
+		width: 0%;
+	}
+	.boy{
+		display: none;
+	}
+	.boy-img-img {
+		margin-right: -13px;
+	}
+	.bg-img {
+		height: 455px;
+	}
+}
+.main-header {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 7;
+}
+@include mq-only('sm', 'md'){	
+	.side-nav-cont{
+		height: 37%;
+	}
+	.layout{
+		height: 42%;
+	}
+	.header-logo{
+		margin: 0px;
+		margin-top: 10px;
+		margin-left: rem(20);
+	}
+	
+}
+@include mq-only('md', 'lg'){
+	.side-nav-cont{
+		height: 61%;
+		width: 93%;
+	}
+	.top-heading {
+		text-align: center;
+	}
+	.header-logo {
+		float: left;
+		margin-left: rem(20);
+		.boy{
+			margin-top: rem(-71);
+		}
+	}
+	.bg-img {
+		height: 588px;
+	}
+	.intro{
+		margin-left: 20px;
+	}
+}
+
+
+
+.intro{
+	width:  50%;
+	margin-top: 13.75rem;
+	color: #fff;
+	float: left;
+	.ab-name{
+		font-size: rem(30);
+		font-family: "Montserrat";
+	}
+	.ab-position{
+		font-size: rem(25);
+	}
+	.ab-service{
+		font-size: rem(17);
+		line-height: 1.3;
+	}
+	.blue{
+		color:rgb(76, 76, 253);
+	}
+}
+//===========================================
+// -Header end
+//===========================================
